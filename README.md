@@ -2,6 +2,8 @@
 
 > Download the project or take a pull from the github
 
+> Go inside AuthWithOTP folder and run the command "git switch master"
+
 > Download the .sql file to create the database
 
 > Open project, change the database setting in appsettings.json file
