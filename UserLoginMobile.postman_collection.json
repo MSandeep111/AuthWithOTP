@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "c574c77d-4ddb-4546-bbba-762e54e40d4e",
+		"name": "UserLoginMobile",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6499410"
+	},
+	"item": [
+		{
+			"name": "http://localhost:24850/api/User/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\":\"Sandeep Maurya\",\r\n    \"ContactNumber\":\"9768208495\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24850/api/User/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24850",
+					"path": [
+						"api",
+						"User",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:24850/api/User/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ContactNumber\":\"9768208495\",\r\n    \"OTP\":\"273575\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24850/api/User/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24850",
+					"path": [
+						"api",
+						"User",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:24850/api/User/verify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ContactNumber\":\"9768208495\",\r\n    \"OTP\":\"585366\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24850/api/User/verify",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24850",
+					"path": [
+						"api",
+						"User",
+						"verify"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:24850/api/User/generate-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ContactNumber\":\"9768208495\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:24850/api/User/generate-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "24850",
+					"path": [
+						"api",
+						"User",
+						"generate-otp"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
